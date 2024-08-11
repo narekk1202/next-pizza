@@ -11,7 +11,7 @@ export default async function ProductPage({
 		where: { id: Number(id) },
 		include: {
 			ingredients: true,
-			catergory: {
+			category: {
 				include: {
 					products: {
 						include: {
