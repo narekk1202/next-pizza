@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
 				id: order.id,
 			},
 			data: {
-				status: isSucceeded ? OrderStatus.SUCCEEDED : OrderStatus.CANCELED,
+				status: isSucceeded ? OrderStatus.SUCCEEDED : OrderStatus.CANCELLED,
 			},
 		});
 
